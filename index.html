@@ -33,16 +33,27 @@
   </style>
 
   <style>
-@keyframes float {
+  @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
-}
-.float-animation {
+   } 
+  .float-animation {
   animation: float 3s ease-in-out infinite;
+   }
+  </style>
+
+<style>
+@media (max-width: 640px) {
+  .buzon-float {
+    right: 50%; /* centrado relativo */
+    transform: translate(50%, -50%); /* ajustar para que no quede fuera */
+    width: 80px; /* más pequeño en celular */
+    height: 80px;
+    top: 20%; /* un poco más arriba */
+  }
 }
 </style>
-
 
 </head>
 <body class="bg-cover bg-center min-h-screen" style="background-image: url(imagenes/fondo1.jpg);">
@@ -61,8 +72,7 @@
 
   <!-- Imagen flotante -->
 
-  <img src="imagenes/buzonimg-removebg-preview.png" alt="Buzón de regalo" class="w-28 h-28 object-contain absolute right-[130px] top-[15%] transform -translate-y-1/2 hidden sm:block float-animation">
-
+<img src="imagenes/buzonimg-removebg-preview.png" alt="Buzón de regalo" class="w-28 h-28 object-contain absolute right-[130px] top-[15%] transform -translate-y-1/2 float-animation buzon-float">
 
   <!-- Texto de horarios -->
   <p class="text-base md:text-lg vt323-regular">Sábado <span class="text-yellow-300 font-semibold">5 DE JULIO</span></p>
