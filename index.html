@@ -33,25 +33,13 @@
   </style>
 
   <style>
-  @keyframes float {
+@keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
-   } 
-  .float-animation {
+}
+.float-animation {
   animation: float 3s ease-in-out infinite;
-   }
-  </style>
-
-<style>
-@media (max-width: 640px) {
-  .buzon-float {
-    right: 20px; /* Lo mandamos a la esquina */
-    transform: translateY(-50%); /* Solo movemos vertical, no horizontal */
-    width: 70px; /* Más pequeña en celular */
-    height: 70px;
-    top: 10%; /* Un poco más arriba */
-  }
 }
 </style>
 
@@ -72,10 +60,8 @@
 <div class="relative flex flex-col items-center">
 
   <!-- Imagen flotante -->
-
-<img src="imagenes/buzonimg-removebg-preview.png" alt="Buzón de regalo" class="w-28 h-28 object-contain absolute right-[130px] top-[15%] transform -translate-y-1/2 float-animation buzon-float">
-
-
+  <img src="imagenes/buzonimg-removebg-preview.png" alt="Buzón de regalo" class="w-28 h-28 object-contain absolute right-[130px] top-[45%] transform -translate-y-1/2 hidden sm:block">
+  
   <!-- Texto de horarios -->
   <p class="text-base md:text-lg vt323-regular">Sábado <span class="text-yellow-300 font-semibold">5 DE JULIO</span></p>
   <p class="text-sm md:text-base vt323-regular">Lugar: Terraza Bustillos</p>
