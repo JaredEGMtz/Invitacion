@@ -34,15 +34,16 @@
 
 <style>
 @media (max-width: 640px) {
-  img {
-    right: 20px;
-    top: 15%;
-    width: 70px;
+  .buzon-img {
+    right: 20px; /* Pegada a la derecha */
+    top: 10%; /* Más arriba para que no tape el texto */
+    width: 70px; /* Más pequeña en celular */
     height: 70px;
-    transform: translateY(-50%);
+    transform: translateY(0); /* Quitamos el -50% que la centra */
   }
 }
 </style>
+
 
 </head>
 <body class="bg-cover bg-center min-h-screen" style="background-image: url(imagenes/fondo1.jpg);">
@@ -60,7 +61,7 @@
 <div class="relative flex flex-col items-center">
 
   <!-- Imagen flotante -->
-<img src="imagenes/buzonimg-removebg-preview.png" alt="Buzón de regalo" class="w-28 h-28 object-contain absolute right-[130px] top-[45%] transform -translate-y-1/2">
+<img src="imagenes/buzonimg-removebg-preview.png" alt="Buzón de regalo" class="w-28 h-28 object-contain absolute right-[130px] top-[45%] transform -translate-y-1/2 buzon-img">
 
   
   <!-- Texto de horarios -->
